@@ -11,8 +11,6 @@ As an example, we'll place two resource widgets, one that reports all stats, and
     disk: /mnt/storage
 
 - resources:
-    cpu: false
-    memory: false
     disk: /mnt/backups
 ```
 
@@ -33,6 +31,24 @@ The disk path is the path reported by `df` (Mounted On), or the mount point of t
     memory: true
     disk: /disk/mount/path
 ```
+
+You can also pass a `label` option, which allows you to group resources under named sections,
+
+```yaml
+- resources:
+    label: System
+    cpu: true
+    memory: true
+
+- resources:
+    label: Storage
+    disk: /mnt/storage
+```
+
+Which produces something like this,
+
+<img width="413" alt="Screenshot 2022-08-27 at 2 52 20 AM" src="https://user-images.githubusercontent.com/82196/187005111-57a29f5c-96d5-4dab-bedc-eaecf3de5c57.png">
+
 
 ## Weather
 
