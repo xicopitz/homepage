@@ -1,5 +1,41 @@
 # Configuration
 
+Information widgets are placed above the first horizontal fold line, and can be configured more than once.
+
+As an example, we'll place two resource widgets, one that reports all stats, and one that report only disk usage for a separate location.
+
+```yaml
+- resources:
+    cpu: true
+    memory: true
+    disk: /mnt/storage
+
+- resources:
+    cpu: false
+    memory: false
+    disk: /mnt/backups
+```
+
+Which results in something like this:
+
+<img width="534" alt="Resource Widgets" src="https://user-images.githubusercontent.com/82196/186882330-73d1024c-a0b8-4d8c-81dc-f1c2b3920188.png">
+
+
+## Resources
+
+You can include all or some of the available resources.  If you do not want to see that resource, simply pass `false`.
+
+The disk path is the path reported by `df` (Mounted On), or the mount point of the disk.
+
+```yaml
+- resources:
+    cpu: true
+    memory: true
+    disk: /disk/mount/path
+```
+
+## Weather
+
 The weather widget uses the weatherapi.com API, so you will need to register and grab your API key (free tier is more than enough).
 
 The widget is configured inside of the `widgets.yaml` file.
