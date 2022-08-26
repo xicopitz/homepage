@@ -28,6 +28,17 @@ widget:
   key: apikeyapikeyapikeyapikeyapikey
 ```
 
+## Jellyfin
+
+You can create an API key from inside Jellyfin at `Settings > Advanced > Api Keys`
+
+```yaml
+widget:
+  type: jellyfin
+  url: http://jellyfin.host.or.ip
+  key: apikeyapikeyapikeyapikeyapikey
+```
+
 ## Sonarr
 
 Find your API key under `Settings > General`.
@@ -93,6 +104,7 @@ PiHole does not require any authentication for the widget to work, as it uses th
 widget:
   type: pihole
   url: http://pi.hole.or.ip
+  proxy: true # Optional, only use if it doesn't work otherwise
 ```
 
 ## Portainer
