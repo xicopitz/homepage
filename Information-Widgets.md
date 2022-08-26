@@ -36,7 +36,7 @@ The disk path is the path reported by `df` (Mounted On), or the mount point of t
 
 ## Weather
 
-The weather widget uses the weatherapi.com API, so you will need to register and grab your API key (free tier is more than enough).
+The weather widget uses the weatherapi.com API, so you will need to [register](https://www.weatherapi.com/signup.aspx) and grab your API key (free tier is more than enough).
 
 The widget is configured inside of the `widgets.yaml` file.
 
