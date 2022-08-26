@@ -2,6 +2,21 @@
 
 Unless otherwise noted, URLs should not end with a `/` or other API path.  Each widget will handle the path on its own.
 
+Each service can have one widget attached to it (often matching the service type, but thats not forced).
+
+Using Emby as an example, this is how you would attach the Emby service widget.
+
+```yaml
+- Emby:
+    icon: emby.png
+    href: http://emby.home/
+    description: Movies & TV Shows
+    widget:
+      type: emby
+      url: http://emby.home/
+      key: st5XKXl8C0olqTHFPXNVCPIuU5bS6y
+```
+
 ## Emby
 
 You can create an API key from inside Emby at `Settings > Advanced > Api Keys`
