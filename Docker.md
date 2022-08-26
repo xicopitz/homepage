@@ -1,4 +1,4 @@
-# Docker
+# Configuration
 
 Docker instances are configured inside the `docker.yaml` file.  Both IP:PORT and Socket connections are supported.
 
