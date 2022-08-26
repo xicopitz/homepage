@@ -32,3 +32,18 @@ homepage:
 ```
 
 of if you're using `docker run`, add `-v /var/run/docker.sock:/var/run/docker.sock`
+
+## Services
+
+Once you've configured your docker instances, you can then apply them to your services, to get stats and status reporting shown.
+
+Inside of the service you'd like to connect to docker:
+
+```yaml
+- Emby:
+  icon: emby.png
+  href: "http://emby.home/"
+  description: Media server
+  server: my-local-docker # The docker server that was configured
+  container: emby # The name of the container you'd like to connect
+```
