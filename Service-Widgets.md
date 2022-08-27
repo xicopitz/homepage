@@ -120,3 +120,13 @@ widget:
   env: 1
   key: ptr_accesskeyaccesskeyaccesskeyaccesskey
 ```
+
+## Speedtest Tracker
+
+No extra configuration is required.
+
+```yaml
+widget:
+  type: speedtest
+  url: http://speedtest.host.or.ip
+```
