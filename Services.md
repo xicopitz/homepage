@@ -84,7 +84,7 @@ Services may have an icon attached to them, you can use icons from [Dashboard Ic
 <img width="1038" alt="Service Icons" src="https://user-images.githubusercontent.com/82196/187040777-da1361d7-f0c4-4531-95db-136cd00a1611.png">
 
 
-## Server & Container
+## Docker Integration
 
 Services may be connected to a Docker container, either running on the local machine, or a remote machine.
 
@@ -107,9 +107,9 @@ Services may be connected to a Docker container, either running on the local mac
 <img width="1038" alt="Service Containers" src="https://user-images.githubusercontent.com/82196/187040793-cc4c7e3d-8fea-4161-b5e9-ac38a2dc67db.png">
 
 
-## Widgets / Integrations
+## Service Integrations
 
-Services may also have a service widget attached to them, this works independently of the Docker integration.
+Services may also have a service widget (or integration) attached to them, this works independently of the Docker integration.
 
 Here is an example of a Radarr & Sonarr service, with their respective integrations.
 
