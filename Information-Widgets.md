@@ -50,23 +50,30 @@ Which produces something like this,
 <img width="413" alt="Screenshot 2022-08-27 at 2 52 20 AM" src="https://user-images.githubusercontent.com/82196/187005111-57a29f5c-96d5-4dab-bedc-eaecf3de5c57.png">
 
 
-## Weather
+## WeatherAPI
 
-The weather widget uses the weatherapi.com API, so you will need to [register](https://www.weatherapi.com/signup.aspx) and grab your API key (free tier is more than enough).
-
-The widget is configured inside of the `widgets.yaml` file.
+The free tier is all thats required, you will need to [register](https://www.weatherapi.com/signup.aspx) and grab your API key.
 
 ```yaml
-- weather:
-    latitude: 49.947279
-    longitude: 24.223126
-    units: metric
-    apiKey: yourweatherapidotcomkey
-    cache: 5
+- weatherapi:
+    label: Kyiv # optional
+    latitude: 50.449684
+    longitude: 30.525026
+    units: metric # or imperial
+    apiKey: yourweatherapikey
+    cache: 5 # Time in minutes to cache API responses, to stay within limits
 ```
 
-`latitude` and `longitude` are for the location you'd like the weather report to be for.
+## OpenWeatherMap
 
-`units` can be either `metric` for celsius or `imperial` for fahrenheit.
+The free tier is all thats required, you will need to [register](https://www.weatherapi.com/signup.aspx) and grab your API key.
 
-`cache` is how long, in minutes, to cache the API response for.  This allows you to stay well within the free tier API limits.
+```yaml
+- openweathermap:
+    label: Kyiv #optional
+    latitude: 50.449684
+    longitude: 30.525026
+    units: metric # or imperial
+    apiKey: youropenweathermapkey
+    cache: 5 # Time in minutes to cache API responses, to stay within limits
+```
