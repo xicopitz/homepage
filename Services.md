@@ -106,6 +106,11 @@ Services may be connected to a Docker container, either running on the local mac
 
 <img width="1038" alt="Service Containers" src="https://user-images.githubusercontent.com/82196/187040793-cc4c7e3d-8fea-4161-b5e9-ac38a2dc67db.png">
 
+**Clicking on the status light on a service with Docker integration enabled, will expand the container stats, where you can see CPU, Memory and Network activity.**
+
+<img width="1038" alt="Docker Stats Expanded" src="https://user-images.githubusercontent.com/82196/187041538-d42e9496-c585-408b-bd3e-22f6928aa27b.png">
+
+
 
 ## Service Integrations
 
