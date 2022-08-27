@@ -121,6 +121,16 @@ widget:
   key: ptr_accesskeyaccesskeyaccesskeyaccesskey
 ```
 
+## Traefik
+
+No extra configuration is required.
+
+```yaml
+widget:
+  type: traefik
+  url: http://traefik.host.or.ip
+```
+
 ## Speedtest Tracker
 
 No extra configuration is required.
