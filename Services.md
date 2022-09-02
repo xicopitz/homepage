@@ -65,7 +65,7 @@ Services may have descriptions,
 
 ## Icons
 
-Services may have an icon attached to them, you can use icons from [Dashboard Icons](https://github.com/walkxcode/dashboard-icons) automatically, by passing the name of the icon, with, or without `.png`.  You may also pass a remote URL to an icon.  Support for custom locally served icons is coming soon.
+Services may have an icon attached to them, you can use icons from [Dashboard Icons](https://github.com/walkxcode/dashboard-icons) automatically, by passing the name of the icon, with, or without `.png`.  If you would like to load a remote icon, you may pass the URL to it.  If you would like to load a local icon, first create a Docker mount to `public/icons` and then reference your icon as `/icons/myicon.png`.
 
 ```yaml
 - Group A:
