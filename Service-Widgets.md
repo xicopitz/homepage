@@ -39,6 +39,17 @@ widget:
   key: apikeyapikeyapikeyapikeyapikey
 ```
 
+## Tautulli (Plex)
+
+You can find the API key from inside Tautulli at `Settings > Web Interface  > API`
+
+```yaml
+widget:
+  type: tautulli
+  url: http://tautulli.host.or.ip
+  key: apikeyapikeyapikeyapikeyapikey
+```
+
 ## Sonarr
 
 Find your API key under `Settings > General`.
