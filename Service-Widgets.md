@@ -30,7 +30,7 @@ widget:
 
 ## Jellyfin
 
-You can create an API key from inside Jellyfin at `Settings > Advanced > Api Keys`
+You can create an API key from inside Jellyfin at `Settings > Advanced > Api Keys`.
 
 ```yaml
 widget:
@@ -41,7 +41,7 @@ widget:
 
 ## Tautulli (Plex)
 
-You can find the API key from inside Tautulli at `Settings > Web Interface  > API`
+The Plex API is hard to work with and very segmented, to simplify integration, the Tautulli service is used instead.  You can find the API key from inside Tautulli at `Settings > Web Interface  > API`.
 
 ```yaml
 widget:
