@@ -4,3 +4,4 @@ Homepage is developed in English, most other supported languages are provided vi
 
 If you'd like to lend a hand in translating Homepage into more languages, or to improve existing translations, the process is very simple.
 
+Everything can be done from a simple to use web interface here: https://hosted.weblate.org/projects/homepage/homepage/
