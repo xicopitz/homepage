@@ -24,6 +24,8 @@ You can include all or some of the available resources.  If you do not want to s
 
 The disk path is the path reported by `df` (Mounted On), or the mount point of the disk.
 
+**Any disk you wish to access must be mounted to your container as a volume.**
+
 ```yaml
 - resources:
     cpu: true
@@ -62,7 +64,6 @@ If you have more than a single disk and would like to group them together under 
 To produce something like this,
 
 <img width="369" alt="Screenshot 2022-09-11 at 2 15 42 PM" src="https://user-images.githubusercontent.com/82196/189524583-abdf4cc6-99da-430c-b316-16c567db5639.png">
-
 
 
 ## WeatherAPI
