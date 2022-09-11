@@ -16,8 +16,7 @@ As an example, we'll place two resource widgets, one that reports all stats, and
 
 Which results in something like this:
 
-<img width="534" alt="Resource Widgets" src="https://user-images.githubusercontent.com/82196/186882330-73d1024c-a0b8-4d8c-81dc-f1c2b3920188.png">
-
+<img width="484" alt="Resource Widget" src="https://user-images.githubusercontent.com/82196/189524632-f989de29-9a54-4edb-88a9-e548b9cfc61c.png">
 
 ## Resources
 
@@ -47,7 +46,23 @@ You can also pass a `label` option, which allows you to group resources under na
 
 Which produces something like this,
 
-<img width="413" alt="Screenshot 2022-08-27 at 2 52 20 AM" src="https://user-images.githubusercontent.com/82196/187005111-57a29f5c-96d5-4dab-bedc-eaecf3de5c57.png">
+<img width="373" alt="Resource Groups" src="https://user-images.githubusercontent.com/82196/189524699-e9005138-e049-4a9c-8833-ac06e39882da.png">
+
+If you have more than a single disk and would like to group them together under the same label, you can pass an array of paths instead,
+
+```yaml
+- resources:
+    label: Storage
+    disk:
+      - /mnt/storage
+      - /mnt/backup
+      - /mnt/media
+```
+
+To produce something like this,
+
+<img width="369" alt="Screenshot 2022-09-11 at 2 15 42 PM" src="https://user-images.githubusercontent.com/82196/189524583-abdf4cc6-99da-430c-b316-16c567db5639.png">
+
 
 
 ## WeatherAPI
