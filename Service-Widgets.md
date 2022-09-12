@@ -17,6 +17,11 @@ Using Emby as an example, this is how you would attach the Emby service widget.
       key: st5XKXl8C0olqTHFPXNVCPIuU5bS6y
 ```
 
+
+# Streaming Media Providers
+
+Outgoing media streaming services, these widgets display current media information and controls.
+
 ## Emby
 
 You can create an API key from inside Emby at `Settings > Advanced > Api Keys`
@@ -27,6 +32,7 @@ widget:
   url: http://emby.host.or.ip
   key: apikeyapikeyapikeyapikeyapikey
 ```
+
 
 ## Jellyfin
 
@@ -39,6 +45,7 @@ widget:
   key: apikeyapikeyapikeyapikeyapikey
 ```
 
+
 ## Tautulli (Plex)
 
 The Plex API is hard to work with and very segmented, to simplify integration, the Tautulli service is used instead.  You can find the API key from inside Tautulli at `Settings > Web Interface  > API`.
@@ -49,6 +56,11 @@ widget:
   url: http://tautulli.host.or.ip
   key: apikeyapikeyapikeyapikeyapikey
 ```
+
+
+# Media Management Tools
+
+This includes the `arr` range of utilities, as well as media request management tools.
 
 ## Sonarr
 
@@ -61,6 +73,7 @@ widget:
   key: apikeyapikeyapikeyapikeyapikey
 ```
 
+
 ## Radarr
 
 Find your API key under `Settings > General`.
@@ -72,6 +85,19 @@ widget:
   key: apikeyapikeyapikeyapikeyapikey
 ```
 
+
+## Readarr
+
+Find your API key under `Settings > General`.
+
+```yaml
+widget:
+  type: readarr
+  url: http://readarr.host.or.ip
+  key: apikeyapikeyapikeyapikeyapikey
+```
+
+
 ## Ombi
 
 Find your API key under `Settings > Configuration > General`.
@@ -82,6 +108,35 @@ widget:
   url: http://ombi.host.or.ip
   key: apikeyapikeyapikeyapikeyapikey
 ```
+
+
+## Overseerr
+
+Find your API key under `Settings > General > API Key`.
+
+```yaml
+widget:
+  type: overseerr
+  url: http://overseerr.host.or.ip
+  key: apikeyapikeyapikeyapikeyapikey
+```
+
+
+## Jellyseerr
+
+Find your API key under `Settings > General > API Key`.
+
+```yaml
+widget:
+  type: jellyseerr
+  url: http://jellyseerr.host.or.ip
+  key: apikeyapikeyapikeyapikeyapikey
+```
+
+
+# Download Clients
+
+Download clients, like Usenet and BitTorrent, as well as their utility services for tracker and list management.
 
 ## Nzbget
 
@@ -95,6 +150,19 @@ widget:
   password: controlpassword
 ```
 
+
+## SABnzbd
+
+Find your API key under `Config > General > API Key`.
+
+```yaml
+widget:
+  type: sabnzbd
+  url: http://sabnzbd.host.or.ip
+  key: apikeyapikeyapikeyapikeyapikey
+```
+
+
 ## ruTorrent
 
 This requires the `httprpc` plugin to be installed and enabled, and is part of the default ruTorrent plugins.  If you have not explicitly removed or disable this plugin, it should be available.
@@ -107,6 +175,11 @@ widget:
   password: password # optional, false if not used
 ```
 
+
+# Networking Utilities
+
+Includes things like proxy managers, DNS providers and network statistics.
+
 ## PiHole
 
 PiHole does not require any authentication for the widget to work, as it uses the data that is exposed publicly.
@@ -117,6 +190,7 @@ widget:
   url: http://pi.hole.or.ip
   proxy: true # Optional, only use if it doesn't work otherwise
 ```
+
 
 ## Portainer
 
@@ -132,6 +206,7 @@ widget:
   key: ptr_accesskeyaccesskeyaccesskeyaccesskey
 ```
 
+
 ## Traefik
 
 No extra configuration is required.
@@ -142,6 +217,7 @@ widget:
   url: http://traefik.host.or.ip
 ```
 
+
 ## Speedtest Tracker
 
 No extra configuration is required.
@@ -150,4 +226,36 @@ No extra configuration is required.
 widget:
   type: speedtest
   url: http://speedtest.host.or.ip
+```
+
+
+# System Utilities & Services
+
+System specific utilities and tools like message queues, databases, etc.
+
+## Gotify
+
+No extra configuration is required.
+
+```yaml
+widget:
+  type: gotify
+  url: http://gotify.host.or.ip
+```
+
+
+# Information Providers
+
+Non service related items that display information from other sources, like stock monitoring or news.
+
+## Coin Market Cap
+
+Get your API key from your [CoinMarketCap Pro Dashboard](https://pro.coinmarketcap.com/account).
+
+```yaml
+widget:
+  type: coinmarketcap
+  currency: GBP # Optional
+  symbols: [BTC, LTC, ETH]
+  key: apikeyapikeyapikeyapikeyapikey
 ```
