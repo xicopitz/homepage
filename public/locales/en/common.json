@@ -35,6 +35,7 @@
         "tx": "TX",
         "mem": "MEM",
         "cpu": "CPU",
+        "gpu": "GPU",
         "offline": "Offline"
     },
     "emby": {

@@ -1,6 +1,7 @@
 import { existsSync } from "fs";
 
 import { cpu, drive, mem } from "node-os-utils";
+import systeminformation from "systeminformation"
 
 export default async function handler(req, res) {
   const { type, target } = req.query;
@@ -10,6 +11,17 @@ export default async function handler(req, res) {
       cpu: {
         usage: await cpu.usage(1000),
         load: cpu.loadavgTime(5),
+        temp: 10 //await systeminformation.cpuTemperature()?.main
+      },
+    });
+  }
+
+  if (type === "gpu") {
+
+    return res.status(200).json({
+      gpu: {
+        temp: await (await systeminformation.graphics()).controllers?.filter((cont) => cont?.bus === "PCI")[0].temperatureGpu,
+        usage: await (await systeminformation.graphics()).controllers?.filter((cont) => cont?.bus === "PCI")[0].utilizationGpu,
       },
     });
   }

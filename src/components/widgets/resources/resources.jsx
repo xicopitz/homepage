@@ -1,5 +1,6 @@
 import Disk from "./disk";
 import Cpu from "./cpu";
+import Gpu from "./gpu";
 import Memory from "./memory";
 
 export default function Resources({ options }) {
@@ -9,6 +10,7 @@ export default function Resources({ options }) {
     <div className="flex flex-col max-w:full sm:basis-auto self-center m-auto flex-wrap">
       <div className="flex flex-row self-center flex-wrap justify-between">
         {options.cpu && <Cpu expanded={expanded} />}
+        {options.gpu && <Gpu expanded={expanded} />}
         {options.memory && <Memory expanded={expanded} />}
         {Array.isArray(options.disk)
           ? options.disk.map((disk) => <Disk key={disk} options={{ disk }} expanded={expanded} />)
