@@ -65,7 +65,7 @@
     "pihole": {
         "queries": "Requêtes",
         "blocked": "Bloqué",
-        "gravity": "La gravité"
+        "gravity": "Listes dom. bloqués"
     },
     "speedtest": {
         "upload": "Téléversement",
@@ -133,5 +133,11 @@
         "numberOfQueries": "Demandes",
         "numberOfFailGrabs": "Capture échouée",
         "numberOfFailQueries": "Demande échouée"
+    },
+    "transmission": {
+        "download": "Download",
+        "upload": "Upload",
+        "leech": "Leech",
+        "seed": "Seed"
     }
 }

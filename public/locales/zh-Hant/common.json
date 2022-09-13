@@ -1,42 +1,21 @@
 {
-    "common": {
-        "bytes": "{{value, bytes}}",
-        "bits": "{{value, bytes(bits: true)}}",
-        "bbytes": "{{value, bytes(binary: true)}}",
-        "bbits": "{{value, bytes(bits: true, binary: true)}}",
-        "byterate": "{{value, rate}}",
-        "bitrate": "{{value, rate(bits: true)}}",
-        "percent": "{{value, percent}}",
-        "number": "{{value, number}}",
-        "ms": "{{value, number}}"
-    },
     "widget": {
         "missing_type": "Missing Widget Type: {{type}}",
         "api_error": "API Error",
         "status": "Status"
     },
     "weather": {
-      "current": "Current Location",
-      "allow": "Click to allow",
-      "updating": "Updating",
-      "wait": "Please wait"
-    },
-    "search": {
-        "placeholder": "Search…"
-    },
-    "resources": {
-        "total": "Total",
-        "free": "Free",
-        "used": "Used",
-        "load": "Load"
+        "current": "Current Location",
+        "allow": "Click to allow",
+        "updating": "Updating",
+        "wait": "Please wait"
     },
     "docker": {
         "rx": "RX",
+        "offline": "Offline",
         "tx": "TX",
         "mem": "MEM",
-        "cpu": "CPU",
-        "gpu": "GPU",
-        "offline": "Offline"
+        "cpu": "CPU"
     },
     "emby": {
         "playing": "Playing",
@@ -49,6 +28,20 @@
         "transcoding": "Transcoding",
         "bitrate": "Bitrate",
         "no_active": "No Active Streams"
+    },
+    "jellyseerr": {
+        "pending": "Pending",
+        "approved": "Approved",
+        "available": "Available"
+    },
+    "search": {
+        "placeholder": "Search…"
+    },
+    "resources": {
+        "total": "Total",
+        "free": "Free",
+        "used": "Used",
+        "load": "Load"
     },
     "nzbget": {
         "rate": "Rate",
@@ -65,21 +58,15 @@
         "upload": "Upload",
         "download": "Download"
     },
-    "transmission": {
-        "download": "Download",
-        "upload": "Upload",
-        "leech": "Leech",
-        "seed": "Seed"
+    "radarr": {
+        "movies": "Movies",
+        "wanted": "Wanted",
+        "queued": "Queued"
     },
     "sonarr": {
         "wanted": "Wanted",
         "queued": "Queued",
         "series": "Series"
-    },
-    "radarr": {
-        "wanted": "Wanted",
-        "queued": "Queued",
-        "movies": "Movies"
     },
     "readarr": {
         "wanted": "Wanted",
@@ -91,16 +78,11 @@
         "approved": "Approved",
         "available": "Available"
     },
-    "jellyseerr": {
+    "overseerr": {
         "pending": "Pending",
         "approved": "Approved",
         "available": "Available"
     },
-    "overseerr": {
-      "pending": "Pending",
-      "approved": "Approved",
-      "available": "Available"
-  },
     "pihole": {
         "queries": "Queries",
         "blocked": "Blocked",
@@ -121,6 +103,11 @@
         "services": "Services",
         "middleware": "Middleware"
     },
+    "gotify": {
+        "clients": "Clients",
+        "apps": "Applications",
+        "messages": "Messages"
+    },
     "npm": {
         "enabled": "Enabled",
         "disabled": "Disabled",
@@ -129,16 +116,17 @@
     "coinmarketcap": {
         "configure": "Configure one or more crypto currencies to track"
     },
-    "gotify": {
-        "apps": "Applications",
-        "clients": "Clients",
-        "messages": "Messages"
-    },
-    "prowlarr":{
+    "prowlarr": {
         "enableIndexers": "Indexers",
         "numberOfGrabs": "Grabs",
         "numberOfQueries": "Queries",
         "numberOfFailGrabs": "Fail Grabs",
         "numberOfFailQueries": "Fail Queries"
+    },
+    "transmission": {
+        "download": "Download",
+        "upload": "Upload",
+        "leech": "Leech",
+        "seed": "Seed"
     }
 }
