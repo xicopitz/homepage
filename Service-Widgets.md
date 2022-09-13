@@ -237,10 +237,13 @@ System specific utilities and tools like message queues, databases, etc.
 
 No extra configuration is required.
 
+Get a Gotify client token from an existing client or create a new one on your Gotify admin page
+
 ```yaml
 widget:
   type: gotify
   url: http://gotify.host.or.ip
+  key: clientoken
 ```
 
 
