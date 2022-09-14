@@ -5,6 +5,7 @@ import { BiError } from "react-icons/bi";
 import { useTranslation } from "react-i18next";
 
 import UsageBar from "./usage-bar";
+import React from "react";
 
 export default function Cpu({ expanded }) {
   const { t } = useTranslation();
@@ -12,7 +13,6 @@ export default function Cpu({ expanded }) {
   const { data, error } = useSWR(`/api/widgets/resources?type=cpu`, {
     refreshInterval: 1500,
   });
-
 
   if (error || data?.error) {
     return (
@@ -53,6 +53,16 @@ export default function Cpu({ expanded }) {
           </div>
           <div className="pr-1">{t("docker.cpu")}</div>
         </div>
+        {data.cpu.temp != undefined ?
+        <div className="text-theme-800 dark:text-theme-200 text-xs flex flex-row justify-between">
+          <div className="pl-0.5">
+            {t("common.number", {
+              value: data.cpu.temp,
+              maximumFractionDigits: 0,
+            })}ºC
+          </div>
+        </div>:
+        <React.Fragment/>}
         {expanded && (
           <div className="text-theme-800 dark:text-theme-200 text-xs flex flex-row justify-between">
             <div className="pl-0.5">

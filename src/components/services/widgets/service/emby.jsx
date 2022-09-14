@@ -27,7 +27,6 @@ function ticksToString(ticks) {
 }
 
 function SingleSessionEntry({ playCommand, session }) {
-  console.log(session);
   const {
     NowPlayingItem: { Name, SeriesName, RunTimeTicks },
     PlayState: { PositionTicks, IsPaused, IsMuted },
