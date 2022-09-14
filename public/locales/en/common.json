@@ -145,5 +145,9 @@
         "numberOfQueries": "Queries",
         "numberOfFailGrabs": "Fail Grabs",
         "numberOfFailQueries": "Fail Queries"
+    },
+    "jackett": {
+        "configured": "Configured",
+        "errored": "Errored"
     }
 }
