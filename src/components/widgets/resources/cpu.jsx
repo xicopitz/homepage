@@ -35,9 +35,8 @@ export default function Cpu({ expanded }) {
       </div>
     );
   }
-
+  console.log(data.cpu?.temp)
   const percent = data.cpu.usage;
-
   return (
     <div className="flex-none flex flex-row items-center mr-3 py-1.5">
       <FiCpu className="text-theme-800 dark:text-theme-200 w-5 h-5" />
@@ -53,11 +52,11 @@ export default function Cpu({ expanded }) {
           </div>
           <div className="pr-1">{t("docker.cpu")}</div>
         </div>
-        {data.cpu.temp != undefined ?
+        {data.cpu?.temp != undefined ?
         <div className="text-theme-800 dark:text-theme-200 text-xs flex flex-row justify-between">
           <div className="pl-0.5">
             {t("common.number", {
-              value: data.cpu.temp,
+              value: data.cpu?.temp,
               maximumFractionDigits: 0,
             })}ºC
           </div>

@@ -61,7 +61,7 @@ export default function Gpu({ expanded }) {
           </div>
           <div className="pr-1">{t("docker.gpu")}</div>
         </div>
-        {data.cpu.temp != undefined ?
+        {data.gpu?.temp != undefined ?
         <div className="text-theme-800 dark:text-theme-200 text-xs flex flex-row justify-between">
           <div className="pl-0.5">
             {t("common.number", {

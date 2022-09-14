@@ -11,7 +11,7 @@ export default async function handler(req, res) {
       cpu: {
         usage: await cpu.usage(1000),
         load: cpu.loadavgTime(5),
-        temp: await systeminformation.cpuTemperature()?.main
+        temp: await (await systeminformation.cpuTemperature())?.main
       },
     });
   }
@@ -20,9 +20,9 @@ export default async function handler(req, res) {
     return res.status(200).json(
       {
         gpu: {
-          temp: await systeminformation.graphics().controllers?.filter((cont) => cont?.bus === "PCI")[0]?.temperatureGpu,
-          usage: await systeminformation.graphics().controllers?.filter((cont) => cont?.bus === "PCI")[0]?.utilizationGpu,
-          vendor: await systeminformation.graphics().controllers?.filter((cont) => cont?.bus === "PCI")[0]?.vendor,
+          temp: await (await systeminformation.graphics()).controllers?.filter((cont) => cont?.bus === "PCI")[0]?.temperatureGpu,
+          usage: await (await systeminformation.graphics()).controllers?.filter((cont) => cont?.bus === "PCI")[0]?.utilizationGpu,
+          vendor: await (await systeminformation.graphics()).controllers?.filter((cont) => cont?.bus === "PCI")[0]?.vendor,
         },
       });
   }
